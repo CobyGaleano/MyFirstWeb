@@ -69,8 +69,21 @@
             </div>
     </section>
     
+    
         <footer>
-            <div class="redes">
+
+            <section class="Formulario">
+                <form action="/enviar-mensaje" method="POST">
+                    <label for="nombre">Nombre:</label><br />
+                    <input type="text" id="nombre" name="nombre" /><br />
+                    <label for="email">Email:</label><br />
+                    <input type="email" id="email" name="email" /><br />
+                    <label for="mensaje">Mensaje:</label><br />
+                    <textarea id="mensaje" name="mensaje"></textarea><br />
+                    <input type="submit" value="Enviar mensaje" />
+                  </form>
+            </section>
+            <div class="foundMe">
                 <h3>Podes encontararme</h3>
                 <a href="#"><i class='bx bxl-github' ></i></i></a>
                 <a href="#"><i class='bx bxl-linkedin-square' ></i></a>

@@ -80,8 +80,8 @@ body{
 }
 
 .home2 {
-    background:  #ededed;
-    color: black;
+    background:  #ededed25;
+    color:#ededed;
     padding: 0 10%;
     max-width: 900px;
     
@@ -112,8 +112,8 @@ body{
 }
 
 .home3 {
-    background:  #ededed;
-    color: black;
+    background:  #ededed25;
+    color:#ededed;
     border-top: 10px solid #ff5e00;
     max-width: 900px;
 }
@@ -134,12 +134,16 @@ body{
     background-color: gray;
 }
 
-.redes a{
+.foundMe a{
     padding: 5px;
     color:#ff5e00;
     transition: 0.5;
 }
- .redes a:hover{
+ .foundMe a:hover{
     color: #ededed;
  }
  
+ input[type="submit"]:hover {
+    background-color:#ff5e00;
+    transition: 0.5s;
+  }

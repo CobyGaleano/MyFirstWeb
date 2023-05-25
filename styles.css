@@ -147,3 +147,8 @@ body{
     background-color:#ff5e00;
     transition: 0.5s;
   }
+
+  .copyRight{
+    background-color: #ff5e00;
+    color: black;
+  }

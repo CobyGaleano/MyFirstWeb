@@ -7,6 +7,7 @@
     <title>Mi Porfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="functions.js"></script>
 </head>
 <body>
    
@@ -61,35 +62,40 @@
     <section class="home3">
         <h3 class="txtProyctos">Mis Proyectos</h3>
                 <div class="proyectos">
-                <img src="Imagenes/GranCerdo" alt=""><p>EL GRAN CERDO: Proyecto final de laboratorio 1</p>
-                <img src="Imagenes/MiPortfolio.png" alt=""><p>Mi portfolio: Primer maquetado de pagina web</p>
-                <img src="Imagenes/GestionArticulos.png" alt=""><p>Gestion Articulos: Realizado como proyecto para Programacion 3</p>
-                <img src="Imagenes/BomberMan.png" alt=""><p>Bomberman: Proyecto final de laboratorio 2</p>
-                
-            </div>
+                    <img onclick="redirection('GranCerdo')" src="Imagenes/GranCerdo" alt=""><p>EL GRAN CERDO: Proyecto final de laboratorio 1</p>
+                    <img onclick="redirection('Portfolio')" src="Imagenes/MiPortfolio.png" alt=""><p>Mi portfolio: Primer maquetado de pagina web</p>
+                    <img onclick="redirection('GestionArticulos')" src="Imagenes/GestionArticulos.png" alt=""><p>Gestion Articulos: Realizado como proyecto para Programacion 3</p>
+                    <img onclick="redirection('BomberMan')" src="Imagenes/BomberMan.png" alt=""><p>Bomberman: Proyecto final de laboratorio 2</p>
+                </div>
     </section>
-    
-    
-        <footer>
 
-            <section class="Formulario">
-                <form action="/enviar-mensaje" method="POST">
-                    <label for="nombre">Nombre:</label><br />
-                    <input type="text" id="nombre" name="nombre" /><br />
-                    <label for="email">Email:</label><br />
-                    <input type="email" id="email" name="email" /><br />
-                    <label for="mensaje">Mensaje:</label><br />
-                    <textarea id="mensaje" name="mensaje"></textarea><br />
-                    <input type="submit" value="Enviar mensaje" />
-                  </form>
-            </section>
-            <div class="foundMe">
-                <h3>Podes encontararme</h3>
-                <a href="#"><i class='bx bxl-github' ></i></i></a>
-                <a href="#"><i class='bx bxl-linkedin-square' ></i></a>
-                <a href="#"><i class='bx bxl-twitch' ></i></a>
-            </div>
-        </footer>
+    <hr/>
+
+    <section class="Formulario">
+        <form action="/enviar-mensaje" method="POST">
+            <label for="nombre">Nombre:</label><br />
+            <input type="text" id="nombre" name="nombre" /><br />
+            <label for="email">Email:</label><br />
+            <input type="email" id="email" name="email" /><br />
+            <label for="mensaje">Mensaje:</label><br />
+            <textarea id="mensaje" name="mensaje"></textarea><br />
+            <input type="submit" value="Enviar mensaje" />
+          </form>
+    </section>
+<hr/>
+    <div class="foundMe">
+        <h3>Podes encontararme</h3>
+        <a href="#"><i class='bx bxl-github' ></i></i></a>
+        <a href="#"><i class='bx bxl-linkedin-square' ></i></a>
+        <a href="#"><i class='bx bxl-twitch' ></i></a>
+    </div>  
+    
+    <footer>
+        <div class="copyRight">
+            <h4>© Copyright 2023</h3>
+            <p>Built by Brian Galeano</p>
+        </div
+    <footer>    
 
 </body>
 </html>

@@ -20,21 +20,31 @@ body{
     left: 0;
     width: 100%;
     padding: 20px 10%;
-    background: #ff5e00;
+    background: #54009B;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 20px;
 }
 
-.logo{
+.header a{
     font-size: 25px;
     color: #ededed;
     text-decoration: none;
     font-weight: 600;
 }
 
-.navBar a {
+.header a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background:#ff5e00;
+    animation: showRight 1s ease forwards;
+}
+.header .navBar a{
     font-size: 18px;
     color: #ededed;
     text-decoration: none;
@@ -59,36 +69,127 @@ body{
     max-width: 600px;
 }
 
+.presBox img{
+    position: absolute;
+    display: flex;
+    padding: 0 62%;
+}
+
 .presBox h1 {
     font-family: 'Amatic SC', cursive;
-    font-size: 55px;
+    font-size: 40px;
     font-weight: 700;
 
 }
 
 .presBox h3 {
     font-family: 'Amatic SC', cursive;
-    font-size: 28px;
+    font-size: 25px;
     font-weight: 700;
     color: aqua;
 
 }
 
-.presBox p {
-    font-size: 16px;
-  
+.presBox p{
+    font-size: 14px;
+    margin: 20px 0 40px;  
 }
 
-.home2 {
-    background:  #ededed25;
+.presBox .btn-box{
+    display: flex;
+    justify-content: flex-start;
+    width: 345px;
+    height: 50px;
+}
+
+.btn-box a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    border: 2px solid #ededed;
+    border-radius: 8px;
+    font-size: 19px;
     color:#ededed;
-    padding: 0 10%;
-    max-width: 900px;
-    
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.btn-box a:hover {
+    transition: .5s;
+}
+
+.btn-box a::before{
+    content: ""; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background:#54009B;
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-box a:hover::before {
+    width: 100%;
+}
+
+.foundMe {
+    position:absolute;
+    bottom: 40px;
+    width: 170px;
+}
+.foundMe a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #ededed ;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #ededed;
+    text-decoration:  none;
+    z-index: 1;
+    overflow:hidden;
+ }
+.foundMe a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background:#54009B;
+    z-index: -1;
+    transition: .5s;
+ }
+
+.foundMe a:hover::before {
+    width: 100%;
+ }
+
+.home2 {
+    top: 0;
+    left: 20%;
+    width: 100%;
+    padding: 20px 30%;
+    display: flex;
+    background:#ededed25;
+    color:#ededed;
 }
 
 .home2 p{
     max-width: 490px;
+    
 }
 
 .techList {
@@ -112,36 +213,32 @@ body{
 }
 
 .home3 {
-    background:  #ededed25;
+    top: 0;
+    left: 10%;
+    width: 100%;
+    padding: 20px 30%;
+    display: flex;
+    background:#ededed25;
     color:#ededed;
-    border-top: 10px solid #ff5e00;
-    max-width: 900px;
+    
 }
 
-.home3 h3{
-    padding: 0% 10%;
-    font-size: 25px;
+.proyectos{
+    padding: 25%
 }
-
+ 
 .proyectos >img {
     padding: 10% 10%;
-    width: 540px;
+    width: 300px;
     transition: .5s;
+    border: 10px solid white;
+    
 }
 
 .proyectos >img:hover {
     translate: 8%;
     background-color: gray;
 }
-
-.foundMe a{
-    padding: 5px;
-    color:#ff5e00;
-    transition: 0.5;
-}
- .foundMe a:hover{
-    color: #ededed;
- }
  
  input[type="submit"]:hover {
     background-color:#ff5e00;
@@ -149,6 +246,24 @@ body{
   }
 
   .copyRight{
-    background-color: #ff5e00;
+    background-color:#54009B;
     color: black;
+  }
+  
+  .copyRight::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background:#ff5e00;
+    animation: showRight 1s ease forwards;
+  }
+
+  /*Keyframes animation*/
+  @keyframes showRight {
+    100%{
+        width: 0;
+    }
   }

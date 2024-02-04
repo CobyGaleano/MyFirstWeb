@@ -66,6 +66,8 @@
                 <div class="proyectos">
                     <img onclick="redirection('GranCerdo')" src="Imagenes/GranCerdo" alt=""><p>EL GRAN CERDO: Proyecto final de laboratorio 1</p>
                     <img onclick="redirection('Portfolio')" src="Imagenes/MiPortfolio.png" alt=""><p>Mi portfolio: Primer maquetado de pagina web</p>
+                </div>
+                <div class="proyectos">
                     <img onclick="redirection('GestionArticulos')" src="Imagenes/GestionArticulos.png" alt=""><p>Gestion Articulos: Realizado como proyecto para Programacion 3</p>
                     <img onclick="redirection('BomberMan')" src="Imagenes/BomberMan.png" alt=""><p>Bomberman: Proyecto final de laboratorio 2</p>
                 </div>
@@ -73,16 +75,42 @@
 
     <hr/>
 
-    <section class="Formulario">
-        <form action="/enviar-mensaje" method="POST">
-            <label for="nombre">Nombre:</label><br />
-            <input type="text" id="nombre" name="nombre" /><br />
-            <label for="email">Email:</label><br />
-            <input type="email" id="email" name="email" /><br />
-            <label for="mensaje">Mensaje:</label><br />
-            <textarea id="mensaje" name="mensaje"></textarea><br />
-            <input type="submit" value="Enviar mensaje" />
-          </form>
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact<span> Me!</span></h2>
+
+        <form action="#">
+            <div class="input-box">
+                <div class="input-field"> 
+                    <input type="text" placeholder="Full Name" requiered>
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field"> 
+                    <input type="text" placeholder="Emal adress" requiered>
+                    <span class="focus"></span>
+                </div>
+            </div>
+
+            <div class="input-box">
+                <div class="input-field"> 
+                    <input type="number" placeholder="Mobile Number" requiered>
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field"> 
+                    <input type="text" placeholder="Emal Subject" requiered>
+                    <span class="focus"></span>
+                </div>
+            </div>
+
+            <div class="textarea-field">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                <span class="focus"></span>
+            </div>
+
+            <div class="btn-box  btns">
+                <button type="submit" class="btn">Submit</button>
+            </div>
+        
+        </form>
     </section>
     <hr/>    
     <footer>

@@ -1,52 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Porfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <script src="functions.js"></script>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mi Porfolio</title>
+        <link rel="stylesheet" href="styles.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <script src="functions.js"></script>
+    </head>
+    <body>
    
-    <header class="header">
-        <a href="#" class="logo">BRIAN GALEANO</a>
-        <nav class="navBar">
-            <a href="#">Sobre Mi</a>
-            <a href="#">Proyectos</a>
-            <a href="#">Tecnologias</a>
-            <a href="#">Contacto</a>
-        </nav>
-    </header>
+        <header class="header">
+            <a href="#" class="logo">BRIAN GALEANO</a>
+            <nav class="navBar">
+                <a href="#">Sobre Mi</a>
+                <a href="#">Proyectos</a>
+                <a href="#">Tecnologias</a>
+                <a href="#">Contacto</a>
+            </nav>
+        </header>
 
-    <section class="home">            
-            <div class="presBox">
-                    <img src="Imagenes/mipic.jpg" alt="">
-                    <h1>Hola! Soy Brian Galeano</h1>
-                    <h3>Freelance Developer</h3>
-                    <p>Buenas tardes o noches, depende de cuando lo leas. Soy estudiante en la cerrera de Tecnicatura en Programacion
+        <section class="home">            
+                <div class="presBox">
+                        <img src="Imagenes/mipic.jpg" alt="">
+                        <h1>Hola! Soy Brian Galeano</h1>
+                        <h3>Freelance Developer</h3>
+                        <p>Buenas tardes o noches, depende de cuando lo leas. Soy estudiante en la cerrera de Tecnicatura en Programacion
                         en la UTN. Actualmente vivo en Buenos Aires y me desepeño principalmente como programador Freelance.
                         Los invito a recorrer mi portfolio, donde podran dar un pequeño vistazo a mis proyectos realizados 
                         ademas conocer un poco más acerca de las tecnologias y lenguajes en los cuales me desempeño.</p>
-                <div class="btn-box"> 
-                    <a href="#">Hire Me</a>
+                    <div class="btn-box"> 
+                        <a href="#" class="btn">Hire Me</a>
+                    </div>
                 </div>
+
+            <div class="foundMe">
+                <a href="#"><i class='bx bxl-github' ></i></i></a>
+                <a href="#"><i class='bx bxl-linkedin-square' ></i></a>
+                <a href="#"><i class='bx bxl-twitch' ></i></a>
             </div>
+        </section>
 
-        <div class="foundMe">
-            <a href="#"><i class='bx bxl-github' ></i></i></a>
-            <a href="#"><i class='bx bxl-linkedin-square' ></i></a>
-            <a href="#"><i class='bx bxl-twitch' ></i></a>
-        </div>
-    </section>
-
-   <section class="home2">
-        <div class="Skills">
-         <h3>Aptitudes</h3>
-            <p>Este es el listado de los lenguajes o tecnologias que manejo principalmente
-                </p>
+        <section class="home2">
+            <div class="Skills">
+                <h3>Aptitudes</h3>
+                <p>Este es el listado de los lenguajes o tecnologias que manejo principalmente</p>
         
                 <div class="techList">
                     <img  src="Imagenes/c++.png" alt="">
@@ -59,64 +58,68 @@
                     <img  src="Imagenes/css.png" alt="">
                     <img  src="Imagenes/JavaScript.png" alt="">
                 </div>
-    </section>    
+            </div>
+        </section>    
 
-    <section class="home3">
-        <h3>Mis Proyectos</h3>
-                <div class="proyectos">
-                    <img onclick="redirection('GranCerdo')" src="Imagenes/GranCerdo" alt=""><p>EL GRAN CERDO: Proyecto final de laboratorio 1</p>
+        <section class="home3">
+            <div class="proyectos">
+                <h3>Mis Proyectos</h3>
+                <p>Listado de los diferentes proyectos realizados</p>
+                <div class="proyectList">
+                    <img onclick="redirection('GranCerdo')" src="Imagenes/GranCerdo" alt="">
+                    <p>EL GRAN CERDO: Proyecto final de laboratorio 1</p>
                     <img onclick="redirection('Portfolio')" src="Imagenes/MiPortfolio.png" alt=""><p>Mi portfolio: Primer maquetado de pagina web</p>
                 </div>
-                <div class="proyectos">
-                    <img onclick="redirection('GestionArticulos')" src="Imagenes/GestionArticulos.png" alt=""><p>Gestion Articulos: Realizado como proyecto para Programacion 3</p>
+                <div class="proyectList">
+                    <img onclick="redirection('GestionArticulos')" src="Imagenes/GestionArticulos.png" alt=""><p>Gestion Articulos: Proyecto para Programacion 3</p>
                     <img onclick="redirection('BomberMan')" src="Imagenes/BomberMan.png" alt=""><p>Bomberman: Proyecto final de laboratorio 2</p>
                 </div>
-    </section>
+            </div>
+        </section>
 
-    <hr/>
+        <section class="contact" id="contact">
+            <h2 class="heading">Contact<span> Me!</span></h2>
 
-    <section class="contact" id="contact">
-        <h2 class="heading">Contact<span> Me!</span></h2>
+            <form action="#">
+                <div class="input-box">
+                    <div class="input-field"> 
+                        <input type="text" placeholder="Full Name" requiered>
+                        <span class="focus"></span>
+                    </div>
+                    <div class="input-field"> 
+                        <input type="text" placeholder="Email adress" requiered>
+                        <span class="focus"></span>
+                    </div>
+                </div>
 
-        <form action="#">
-            <div class="input-box">
-                <div class="input-field"> 
-                    <input type="text" placeholder="Full Name" requiered>
+                <div class="input-box">
+                    <div class="input-field"> 
+                        <input type="number" placeholder="Mobile Number" requiered>
+                        <span class="focus"></span>
+                    </div>
+                    <div class="input-field"> 
+                        <input type="text" placeholder="Email Subject" requiered>
+                        <span class="focus"></span>
+                    </div>
+                </div>
+
+                <div class="textarea-field">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
                     <span class="focus"></span>
                 </div>
-                <div class="input-field"> 
-                    <input type="text" placeholder="Email adress" requiered>
-                    <span class="focus"></span>
-                </div>
-            </div>
 
-            <div class="input-box">
-                <div class="input-field"> 
-                    <input type="number" placeholder="Mobile Number" requiered>
-                    <span class="focus"></span>
+                <div class="btn-box">
+                    <button type="submit" class="btn">Submit</button>
                 </div>
-                <div class="input-field"> 
-                    <input type="text" placeholder="Emal Subject" requiered>
-                    <span class="focus"></span>
-                </div>
+            </form>
+        </section>
+        <hr/>    
+        <footer>
+            <div class="copyRight">
+                <h4>© Copyright 2023</h3>
+                <p>Built by Brian Galeano</p>
             </div>
+        </footer>
+    </body>
 
-            <div class="textarea-field">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
-                <span class="focus"></span>
-            </div>
-
-            <div class="btn-box  btns">
-                <button type="submit" class="btn">Submit</button>
-            </div>
-        
-        </form>
-    </section>
-    <hr/>    
-    <footer>
-        <div class="copyRight">
-            <h4>© Copyright 2023</h3>
-            <p>Built by Brian Galeano</p>
-        </div
-</body>
 </html>

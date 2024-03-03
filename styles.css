@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
+section{
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+
+}
 
 *{
     margin: 0;
@@ -15,7 +20,7 @@ body{
 }
 
 .header{
-    position: fixed;
+    position:absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -27,13 +32,13 @@ body{
 }
 
 .heading{
-    font-size: 5rem;
+    font-size: 4rem;
     margin-bottom: 3rem;
     text-align: center;
 }
 
 span{
-    color:#9B0094;
+    color:#54009B;
 }
 
 .logo{
@@ -109,9 +114,9 @@ span{
 .presBox h3 {
     position: relative;
     font-family: 'Amatic SC', cursive;
-    font-size: 25px;
-    font-weight: 700;
-    color: aqua;
+    font-size: 28px;
+    font-weight: 1000;
+    color:#54009B
 
 }
 
@@ -145,7 +150,7 @@ span{
     animation-delay: 1.2s;
 }
 
-.presBox .btn-box{
+.btn-box{
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -153,7 +158,7 @@ span{
     height: 50px;
 }
 
-.presBox .btn-box::before{
+.btn-box::before{
     content: '';
     position: absolute;
     top: 0;
@@ -166,17 +171,18 @@ span{
     z-index: 2;
 }
 
-.btn-box a {
+.btn-box .btn{
     position: relative;
     display: inline-flex;
     justify-content: center;
     align-items: center;
     width: 150px;
     height: 100%;
-    border: 2px solid #ededed;
+    border: 2px solid #54009B;
     border-radius: 8px;
     font-size: 19px;
-    color:#ededed;
+    color:#54009B;
+    background: #111111;
     text-decoration: none;
     font-weight: 600;
     letter-spacing: 1px;
@@ -184,11 +190,15 @@ span{
     overflow: hidden;
 }
 
-.btn-box a:hover {
+.btn-box .btn:hover {
     transition: .5s;
+    background: #54009B;
+    border: 2px solid #ededed;
+    color:#ededed;
+    box-shadow: 0 0 20px #54009B;
 }
 
-.btn-box a::before{
+.btn-box .btn::before{
     content: ""; 
     position: absolute;
     top: 0;
@@ -200,7 +210,7 @@ span{
     transition: .5s;
 }
 
-.btn-box a:hover::before {
+.btn-box .btn:hover::before {
     width: 100%;
 }
 
@@ -233,13 +243,21 @@ span{
     width: 40px;
     height: 40px;
     background: transparent;
-    border: 2px solid #ededed ;
+    border: 2px solid #54009B;
     border-radius: 50%;
     font-size: 20px;
-    color: #ededed;
+    color: #54009B;
     text-decoration:  none;
     z-index: 1;
     overflow:hidden;
+}
+
+.foundMe a:hover{
+    transition: .5s;
+    background: #54009B;
+    border: 2px solid #ededed;
+    color:#ededed;
+    box-shadow: 0 0 20px #54009B;
 }
 
 .foundMe a::before {
@@ -264,7 +282,6 @@ span{
     width: 100%;
     padding: 20px 30%;
     display: flex;
-    background:#ededed25;
     color:#ededed;
 }
 
@@ -283,7 +300,6 @@ span{
     width: 150px;
     height: 150px;
     transition: .5s;
-    border: 2px solid #ededed;
     border-radius: 8px;
     font-size: 19px;
     color:#ededed;
@@ -298,29 +314,32 @@ span{
 .techList >img:hover{  
     transform: translateY(-8%);
     background-color: grey;
-    
+    transition: .5s;
+    background: #54009B;
+    border: 1px solid #ededed;
+    color:#ededed;
+    box-shadow: 0 0 20px #54009B;
 }
 
 .home3 {
     top: 0;
-    left: 10%;
+    left: 20%;
     width: 100%;
     padding: 20px 30%;
     display: flex;
-    background:#ededed25;
-    color:#ededed;
+    color:#ededed;;
 }
 
-.proyectos{
-    padding: 50px 30px;
+.proyectList{
+    display: flex ;  
+    justify-content: space-between;
+    padding:5% 10%;
 }
  
-.proyectos >img {
-    padding: 10% 10%;
-    width: 200px;
+.proyectList >img {
+    width: 300px;
     height: 200px;
     transition: .5s;
-    border: 2px solid #ededed;
     border-radius: 8px;
     font-size: 19px;
     color:#ededed;
@@ -331,14 +350,19 @@ span{
     overflow: hidden;
 }
 
-.proyectos >img:hover {
-    translate: 8%;
-    background-color: gray;
+.proyectList p{
+    display: flex;
+    align-items: end;
 }
- 
-input[type="submit"]:hover {
-    background-color:#ff5e00;
-    transition: 0.5s;
+
+.proyectList >img:hover {
+    transform: translateY(-8%);
+    background-color: grey;
+    transition: .5s;
+    background: #54009B;
+    border: 1px solid #ededed;
+    color:#ededed;
+    box-shadow: 0 0 20px #54009B;
 }
 
 .contact{
@@ -347,7 +371,7 @@ input[type="submit"]:hover {
 }
 
 .contact form{
-    max-width: 700rem;
+    max-width: 70rem;
     margin: 0 auto;
     text-align: center;
 }
@@ -371,15 +395,23 @@ input[type="submit"]:hover {
     height: 100%;
     padding: 1.5rem;
     font-size: 1.6rem;
-    color: #9B0094;
+    color:#54009B;
     background: transparent;
     border-radius: .6rem;
-    border: .2rem solid #9b009b94;
+    border: .2rem solid #54009B;
 }
 
 .copyRight{
-    background-color:#9B0094;
-    color: black;
+    top: 0;
+    left:0;
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 20px;
+    background:#54009B;
+    color: #ededed
 }
 
 /*Keyframes animation*/

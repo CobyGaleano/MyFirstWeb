@@ -97,11 +97,16 @@ section {
 }
 
 .home{
-    height: 100vh;
     display: flex;
     align-items: center;
     padding: 0 9%;
-    
+ /* background: url('Imagenes/mipic.jpg') no-repeat;
+    background-size: cover;
+    background-position: center; */
+}
+
+span{
+    color:#54009B;
 }
 
 .presBox{
@@ -299,22 +304,24 @@ section {
     width: 100%;
 }
 
+.presBox >img{
+    position: absolute;
+    top: 10rem;
+    right: 10rem;
+    width: 15%;
+    height: 15%;
+    /*border: 2px solid red;*/
+}
+
+.presBox >img:hover{
+    background: #54009B;
+}
+
 .heading{
     font-size: 4rem;
     margin-bottom: 3rem;
     text-align: center;
 }
-
-span{
-    color:#54009B;
-}
-
-.presBox img{
-    position: absolute;
-    top: 140px;
-    right: 20%;
-}
-
 
 .home2 {
     top: 0;
@@ -390,6 +397,12 @@ span{
     overflow: hidden;
 }
 
+.proyectList :first-child() {
+    display: flex;
+    width: 0;
+    height: 1;
+}
+
 .proyectList p{
     display: flex;
     align-items: end;
@@ -439,6 +452,34 @@ span{
     background: transparent;
     border-radius: .6rem;
     border: .2rem solid #54009B;
+}
+
+.contact form .input-box .input-field input::placeholder
+.contact form .textarea-field textarea::placeholder {
+    color: var(--text-color);
+}
+
+.contact form .focus{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: red;
+}
+
+.contact form .textarea-field{
+    position: relative;
+    margin: .8rem 0 2.7rem;
+    display: flex;
+}
+
+.contact form .textarea-field{
+    resize: none;
+}
+
+.contact form .btn-box .btn{
+    cursor: pointer;
 }
 
 .copyRight{
